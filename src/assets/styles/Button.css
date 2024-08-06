@@ -1,0 +1,82 @@
+/* src/assets/styles/Button.css */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Size Variants */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.btn-md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* Color Variants */
+.btn-primary {
+  background-color: #FF6B6B;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #FF8C8C;
+}
+
+.btn-secondary {
+  background-color: #FFD93D;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #FFE066;
+}
+
+.btn-accent {
+  background-color: #FF9F1C;
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #FFB44D;
+}
+
+.btn-light {
+  background-color: #F3F4F6;
+  color: #333;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #E2E4E6;
+}
+
+.btn-muted {
+  background-color: #6B7280;
+  color: #fff;
+  border: none;
+}
+
+.btn-muted:hover {
+  background-color: #8990A0;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 159, 28, 0.4);
+}
