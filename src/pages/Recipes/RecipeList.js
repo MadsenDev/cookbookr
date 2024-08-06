@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RecipeCard } from '../../components';
+import { RecipeCard, Header, RecipeSearch } from '../../components';
 
 const recipes = [
     {
@@ -47,11 +47,15 @@ const recipes = [
 
 const RecipeList = () => {
   return (
+    <>
+    <Header title="Recipes" />
+    <RecipeSearch />
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {recipes.map(recipe => (
         <RecipeCard key={recipe.id} recipe={recipe} />
       ))}
     </div>
+    </>
   );
 }
 

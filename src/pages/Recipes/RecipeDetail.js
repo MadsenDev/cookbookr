@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RecipeIngredients, RecipeInstructions, RecipeRating, RecipeComments } from '../../components';
+import { RecipeIngredients, RecipeInstructions, RecipeRating, RecipeComments, Header } from '../../components';
 
 const sampleRecipe = {
   id: 1,
@@ -106,7 +106,7 @@ const RecipeDetail = () => {
   return (
     <div className="container mx-auto p-6">
       <img className="w-full h-64 object-cover rounded-lg mb-6" src={sampleRecipe.imageUrl} alt={sampleRecipe.name} />
-      <h1 className="text-3xl font-semibold text-center mb-4">{sampleRecipe.name}</h1>
+      <Header title={sampleRecipe.name} />
       <p className="text-center text-gray-700 mb-8">{sampleRecipe.description}</p>
       <div className="flex flex-col md:flex-row gap-6">
         <div className="flex-1">
